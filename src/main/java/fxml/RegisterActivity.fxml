@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterActivityController">
+   <children>
+      <Pane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="514.0">
+         <children>
+            <TextField fx:id="txtEmail" layoutX="104.0" layoutY="331.0" prefHeight="26.0" prefWidth="306.0" promptText="Correo electrónico" />
+            <PasswordField fx:id="txtPasswd" layoutX="105.0" layoutY="371.0" prefHeight="26.0" prefWidth="306.0" promptText="Contraseña" />
+            <Button layoutX="105.0" layoutY="548.0" mnemonicParsing="false" onAction="#CrearUsuario" prefHeight="33.0" prefWidth="302.0" text="Registrarse">
+               <font>
+                  <Font name="Segoe UI Semilight" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgLogo" fitHeight="110.0" fitWidth="123.0" layoutX="201.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgName" fitHeight="150.0" fitWidth="200.0" layoutX="158.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/marketify.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtPasswdRepeat" layoutX="104.0" layoutY="413.0" prefHeight="26.0" prefWidth="306.0" promptText="Repetir contraseña" />
+            <TextField fx:id="txtNickname" layoutX="104.0" layoutY="458.0" prefHeight="26.0" prefWidth="306.0" promptText="Nickname" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

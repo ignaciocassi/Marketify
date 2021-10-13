@@ -1,5 +1,4 @@
-package com.ignaciocassi;
-
+package utils;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
